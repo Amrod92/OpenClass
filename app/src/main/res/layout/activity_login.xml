@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rounded_button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="gravity"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rounded_button"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="gravity"
+        android:textColor="#FFFF"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/bLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="161dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="114dp"
+        android:layout_marginBottom="226dp"
+       android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textAlignment="gravity"
+        android:textColor="#0de710"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        tools:background="#298c30"
+        tools:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvRegisterHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@+id/temp_btn"
+        app:layout_constraintTop_toBottomOf="@+id/bLogin"
+        app:layout_constraintVertical_bias="0.264"
+        tools:layout_editor_absoluteX="133dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bLogin"
+        app:layout_constraintVertical_bias="0.314"
+        tools:layout_editor_absoluteX="111dp"
+        tools:textColor="#000" />
+
+    <Button
+        android:id="@+id/temp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginRight="254dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_button"
+        android:text="Demo QR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="331dp"
+        android:layout_height="129dp"
+        android:src="@drawable/openclassheader"
+        app:layout_constraintBottom_toTopOf="@+id/etUsername"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="15dp" />
+
+</android.support.constraint.ConstraintLayout>

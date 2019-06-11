@@ -1,0 +1,69 @@
+Last login: Wed Jan 30 11:23:46 on ttys000
+MacBook-Pro-3:~ user$ ssh -i ~/.ssh/MyKeyPair.pem ubuntu@ec2-35-178-250-193.eu-west-2.compute.amazonaws.com
+Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-1021-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Jan 30 11:29:08 UTC 2019
+
+  System load:  0.06              Processes:           94
+  Usage of /:   25.1% of 7.69GB   Users logged in:     0
+  Memory usage: 35%               IP address for eth0: 172.31.19.118
+  Swap usage:   0%
+
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+3 packages can be updated.
+0 updates are security updates.
+
+
+*** System restart required ***
+Last login: Wed Jan 30 11:24:13 2019 from 134.83.3.152
+ubuntu@ip-172-31-19-118:~$ sudo apt-get mysql-server
+E: Invalid operation mysql-server
+ubuntu@ip-172-31-19-118:~$ sudo apt-get install mysql-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+mysql-server is already the newest version (5.7.25-0ubuntu0.18.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+ubuntu@ip-172-31-19-118:~$ sudo ufw allow mysql
+Rules updated
+Rules updated (v6)
+ubuntu@ip-172-31-19-118:~$ systemctl start mysql
+==== AUTHENTICATING FOR org.freedesktop.systemd1.manage-units ===
+Authentication is required to start 'mysql.service'.
+Authenticating as: Ubuntu (ubuntu)
+Password: 
+
+^C
+ubuntu@ip-172-31-19-118:~$ sudo systemctl start mysql
+ubuntu@ip-172-31-19-118:~$ sudo systemctl enable mysql
+Synchronizing state of mysql.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable mysql
+ubuntu@ip-172-31-19-118:~$ /usr/bin/mysql -u root -p
+Enter password: 
+ERROR 1698 (28000): Access denied for user 'root'@'localhost'
+ubuntu@ip-172-31-19-118:~$ sudo /usr/bin/mysql -u root -p
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 14
+Server version: 5.7.25-0ubuntu0.18.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 

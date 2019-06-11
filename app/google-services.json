@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "7681449722",
+    "firebase_url": "https://cs2001-18-19-2018-19-group-23.firebaseio.com",
+    "project_id": "cs2001-18-19-2018-19-group-23",
+    "storage_bucket": "cs2001-18-19-2018-19-group-23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7681449722:android:148f324c32348329",
+        "android_client_info": {
+          "package_name": "com.example.pc.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7681449722-1c35a7hrqsepqikpgmaht93s3e1k8eec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pc.chatapplication",
+            "certificate_hash": "a35aa3467c73b92d52d41c6c4070b92465d96623"
+          }
+        },
+        {
+          "client_id": "7681449722-pb0k2b1ej64ek8244sgentum5fiqqrc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALM5SEqtyR6NqCoCNek156tSTrFfH3NrE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7681449722-pb0k2b1ej64ek8244sgentum5fiqqrc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

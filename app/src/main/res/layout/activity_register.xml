@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="266dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:autofillHints=""
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:background="@drawable/rounded_button"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFF"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/user_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_register"
+        android:layout_width="266dp"
+        android:layout_height="46dp"
+        android:autofillHints=""
+        android:background="@drawable/rounded_button"
+        android:ems="10"
+        android:hint="@string/username"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:textColor="#FFFF"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/pass_register"
+        app:layout_constraintEnd_toEndOf="@+id/email_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_register"
+        app:layout_constraintTop_toBottomOf="@+id/email_register" />
+
+    <EditText
+        android:id="@+id/pass_register"
+        android:layout_width="266dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="17dp"
+        android:autofillHints=""
+        android:background="@drawable/rounded_button"
+        android:ems="10"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:hint="@string/password"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="#FFF"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/create_account_register"
+        app:layout_constraintEnd_toEndOf="@+id/user_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/user_register"
+        app:layout_constraintTop_toBottomOf="@+id/user_register" />
+
+    <Button
+        android:id="@+id/create_account_register"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/create_account"
+        app:layout_constraintBottom_toTopOf="@+id/already_an_account"
+        app:layout_constraintEnd_toEndOf="@+id/pass_register"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/pass_register"
+        app:layout_constraintTop_toBottomOf="@+id/pass_register"
+        tools:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/already_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Already have an account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/create_account_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/create_account_register" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="331dp"
+        android:layout_height="129dp"
+        android:src="@drawable/openclassheader"
+        app:layout_constraintBottom_toTopOf="@+id/email_register"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="27dp" />
+</android.support.constraint.ConstraintLayout>

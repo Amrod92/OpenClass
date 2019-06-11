@@ -1,0 +1,37 @@
+# Generated files
+gen/
+out/
+
+# Gradle files
+.gradle
+build/
+
+# Local configuration file
+local.properties
+
+# Log files
+*.log
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ Files
+*.iml
+.idea/caches
+.idea/dictionaries
+.idea/libraries
+.idea/workspace.xml
+
+# Additional Android Studio 3 files
+.idea/caches/build_file_checksums.ser
+.idea/modules.xml
+
+# External native build folder created in Android Studio 2.2+
+.externalNativeBuild
+
+# Google Services (e.g. APIs or Firebase)
+#google-services.json
+
+# Other files
+.DS_STORE
+app/proguard-rules.pro
