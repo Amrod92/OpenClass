@@ -5,6 +5,8 @@ This project was created as part of my second year university module, Level 2 Gr
 
 During the whole year, this project was developed by using Scrum as a Agile framework, and by using Trello, we organized the backlog for each Sprint.
 
+The link for the website can be found here: https://amrod92.github.io/WebOpenClass/
+
 The team was compose by:<br>
 -ZAYAN SALMAN KHAN<br>
 -MOHAMMED NADI<br>
