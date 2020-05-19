@@ -1,9 +1,9 @@
 
-OpenClass application enable users sharing anonymously though helping them to protect the relationships with the people that users do know.
+OpenClass application enables users sharing anonymously through helping them to protect their relationships with the people that users do know.
 
 This project was created as part of my second year university module, Level 2 Group Project, at Brunel University London.
 
-During the whole year, this project was developed by using Scrum as a Agile framework, and by using Trello, we organized the backlog for each Sprint.
+During the whole year, we decided to use Scrum as an Agile framework, and Trello to organize the backlog for each Sprint.
 
 The link for the website can be found here: https://amrod92.github.io/WebOpenClass/
 
